@@ -16,7 +16,7 @@ extern "C" {
 #define TXBUFFSZ 1024
 #define RXBUFFSZ 512
 
-#define BAUDRATE   38400
+#define BAUDRATE   115200
 #define USEXONXOFF 1
 
 void uart_echo(int enable);

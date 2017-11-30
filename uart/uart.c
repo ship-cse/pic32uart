@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include <stdint.h>
 #include <plib.h>
 #include "uart.h"
@@ -18,7 +19,7 @@ int buffering = 0;
 /*
  * Interrupt Service Routine for UART - handles rx and tx interrupts.
  */
-void __ISR(_UART1_VECTOR, ipl2) isr_uart_handler(void) {
+void __ISR(_UART1_VECTOR, IPL2AUTO) isr_uart_handler(void) {
 
     char ch;
 
